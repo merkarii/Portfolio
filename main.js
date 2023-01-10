@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const dynamicContent = document.getElementById("dynamic-text");
 
-    const phrases = ["Software Engineer...", "Mentor...", "Human Being...", "teacher at Devsnest"]
+    const phrases = ["Software Engineer...", "Gamer...", "Human Being...", "Athlete"]
     let pharseIndex = 0;
     let letterIndex = 0;
     const typingSpeed = 150;
@@ -35,23 +35,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 updatedPhrase += phrases[pharseIndex].charAt(index);
 
             }
+            console.log(updatedPhrase);
             dynamicContent.textContent = updatedPhrase;
             letterIndex -= 1;
             setTimeout(clearLetters, erasingSpeed)
         }
     }
 
-    printLetters(phrases[pharseIndex]);
-
-    window.addEventListener("scroll", function () {
-        console.log(this.window.scrollY)
-        let intro = this.document.querySelector(".intro");
-        if (this.window.scrollY >= (intro.offsetHeight + intro.offsetTop)) {
-            this.document.querySelector(".header").style.position = "sticky";
-        } else {
-            this.document.querySelector(".header").style.position = "revert";
-
-        }
-    })
+    printLetters(phrases[pharseIndex])
 })
 
