@@ -34,7 +34,7 @@ header {
 }
 nav a {
   text-decoration: none;
-  color: inherit;
+  color: royalblue;
   font-size: var(--font-size-regular);
 }
 header nav > a {
@@ -67,7 +67,7 @@ footer {
 .intro {
   margin: -16px;
   padding: 16px;
-  background-color: var(--intro-color);
+  background-color: #1d1c1c;
   color: white;
   text-align: center;
 }
@@ -75,7 +75,7 @@ footer {
 #profile-image {
   height: 400px;
   width: 400px;
-  filter: drop-shadow(4px -6px 10px black);
+  filter: drop-shadow(4px -6px 10px rgb(12, 36, 141));
 }
 
 .social-links img {
@@ -136,6 +136,7 @@ form#contact {
   gap: var(--spacing-regular);
   justify-content: center;
   justify-items: center;
+  text-align: center;
 }
 .card {
   border: 1px solid white;
