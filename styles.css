@@ -136,7 +136,7 @@ form#contact {
   gap: var(--spacing-regular);
   justify-content: center;
   justify-items: center;
-  text-align: center;
+  
 }
 .card {
   border: 1px solid white;
